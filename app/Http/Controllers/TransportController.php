@@ -87,7 +87,7 @@ class TransportController extends Controller
 		$transport            = new Transport;
 		$transport->name      = $this->names[array_rand($this->names)];
 		$transport->direction = $this->directions[array_rand($this->directions)];
-		$transport->number    = rand(0, 1000);
+		$transport->number    = rand(0, 100);
 		$transport->manual    = 0;
 		$transport->save();
 	}
