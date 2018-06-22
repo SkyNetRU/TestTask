@@ -65,7 +65,7 @@ y
 ```
 
 ```bash
-nohup  while true; do sleep 7; sh /var/www/your_project_name/script.sh ; done & 
+nohup bash -c ' while true; do sleep 7; sh /var/www/your_project_name/script.sh ; done & '
 ```
 
 
