@@ -30,14 +30,16 @@ function getTransportList() {
         }
       });
 
-      //Update list every 5 seconds
-      setTimeout(function() { getTransportList(); }, 5000);
 
     },
     error: function (response, status, error) {
       toastr.error(error, 'Ошибка');
     }
   });
+
+  //Update list every 5 seconds
+  setTimeout(function() { getTransportList(); }, 5000);
+
 }
 
 function saveTransport (form) {
