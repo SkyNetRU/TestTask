@@ -64,6 +64,7 @@ and save
 y
 ```
 
+Run script in background every 7 seconds
 ```bash
 nohup bash -c ' while true; do sleep 7; sh /var/www/your_project_name/script.sh ; done & '
 ```
