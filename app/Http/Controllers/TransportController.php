@@ -100,7 +100,7 @@ class TransportController extends Controller
 	public function deleteOldTransports()
 	{
 		Transport::where('manual', 0)
-			->whereRaw('TIMESTAMPDIFF(MINUTE,created_at ,"' . date('Y-m-d H:i:s') . '") > 2')
+			->whereRaw('TIMESTAMPDIFF(MINUTE,created_at ,"' . date('Y-m-d H:i:s') . '") >= 2')
 			->delete();
 	}
 }
